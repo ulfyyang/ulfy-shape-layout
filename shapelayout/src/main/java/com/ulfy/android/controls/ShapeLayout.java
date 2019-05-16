@@ -12,12 +12,6 @@ import android.graphics.PorterDuffXfermode;
 import android.graphics.RectF;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
-import android.os.Build;
-import android.support.annotation.ColorInt;
-import android.support.annotation.DrawableRes;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
 import android.widget.FrameLayout;
 
@@ -33,23 +27,12 @@ public class ShapeLayout extends FrameLayout {
         init(context, null);
     }
 
-    public ShapeLayout(Context context, @Nullable AttributeSet attrs) {
+    public ShapeLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context, attrs);
     }
 
-    public ShapeLayout(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
-        super(context, attrs, defStyleAttr);
-        init(context, attrs);
-    }
-
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    public ShapeLayout(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
-        init(context, attrs);
-    }
-
-    private void init(Context context, @Nullable AttributeSet attrs) {
+    private void init(Context context, AttributeSet attrs) {
         if (attrs != null) {
             TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.ShapeLayout);
 
@@ -149,14 +132,14 @@ public class ShapeLayout extends FrameLayout {
     /**
      * 设置背景颜色
      */
-    public ShapeLayout setShapeBackgroundColor(@ColorInt int color) {
+    public ShapeLayout setShapeBackgroundColor(int color) {
         return setShapeBackground(new ColorDrawable(color));
     }
 
     /**
      * 设置背景资源
      */
-    public ShapeLayout setShapeBackgroundResource(@DrawableRes int resid) {
+    public ShapeLayout setShapeBackgroundResource(int resid) {
         return setShapeBackground(resid != 0 ? getResources().getDrawable(resid) : null);
     }
 

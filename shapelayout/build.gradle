@@ -15,7 +15,7 @@ publish {
     repoName = 'ulfy-maven'
     groupId = 'com.ulfy.android.controls'
     artifactId = 'shape-layout'
-    publishVersion = '1.0.0'
+    publishVersion = '1.0.1'
     uploadName = 'shape-layout'
     desc = '可裁切任意控件的形状定制容器'
     website = 'https://github.com/ulfyyang/ulfy-shape-layout'
@@ -42,7 +42,6 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:28.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
