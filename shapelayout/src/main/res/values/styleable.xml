@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 形状容器 -->
+    <declare-styleable name="ShapeLayout">
+        <!-- 指定形状：矩形可指定四周的圆角 -->
+        <attr name="layout_shape" format="enum">
+            <!-- 圆形 -->
+            <enum name="circle" value="1" />
+            <!-- 矩形 -->
+            <enum name="rect" value="2" />
+        </attr>
+        <!-- 统一指定矩形圆角 -->
+        <attr name="rect_radius" format="dimension" />
+        <!-- 左上角圆角 -->
+        <attr name="rect_radius_left_top" format="dimension" />
+        <!-- 右上角圆角 -->
+        <attr name="rect_radius_right_top" format="dimension" />
+        <!-- 右下角圆角 -->
+        <attr name="rect_radius_right_bottom" format="dimension" />
+        <!-- 左下角圆角 -->
+        <attr name="rect_radius_left_bottom" format="dimension" />
+        <!-- 制定shape的背景 -->
+        <attr name="shape_background" format="color|reference" />
+    </declare-styleable>
+
+</resources>
