@@ -15,6 +15,7 @@ import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.widget.FrameLayout;
 
+import com.ulfy.android.controls.shapelayout.R;
 
 public class ShapeLayout extends FrameLayout {
     public static final int SHAPE_CIRCLE = 1;       // 圆形
