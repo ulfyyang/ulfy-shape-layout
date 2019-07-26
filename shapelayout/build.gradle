@@ -15,7 +15,7 @@ publish {
     repoName = 'ulfy-maven'
     groupId = 'com.ulfy.android.controls'
     artifactId = 'shape-layout'
-    publishVersion = '1.0.2'
+    publishVersion = '1.0.3'
     uploadName = 'shape-layout'
     desc = '可裁切任意控件的形状定制容器'
     website = 'https://github.com/ulfyyang/ulfy-shape-layout'

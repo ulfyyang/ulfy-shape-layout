@@ -84,23 +84,14 @@ implementation 'com.ulfy.android.controls:shape-layout:x.x.x'
 ShapeLayout shapeSL = findViewById(R.id.shapeSL);
 
 // 设置圆形
-shapeSL.setShape(new ShapeLayout.CircleShape());
+shapeSL.setShapeCircle();
 
 // 设置矩形
-ShapeLayout.RectShape rectShape = new ShapeLayout.RectShape();
-rectShape.setRadius(10);            // px
-rectShape.setRadiusLeftTop(10);     // px
-rectShape.setRadiusRightTop(10);    // px
-rectShape.setRadiusRightBottom(10); // px
-rectShape.setRadiusLeftBottom(10);  // px
-shapeSL.setShape(rectShape);
+shapeSL.setShapeRect(10);               // px
+shapeSL.setShapeRect(10, 10, 10, 10);   // px
 
 // 设置背景，如果显示边框需要设置padding
 shapeSL.setShapeBackgroundColor(Color.BLUE);
 shapeSL.setShapeBackgroundResource(R.drawable.meinv);
 shapeSL.setShapeBackground(new ColorDrawable(Color.BLUE));
 ```
-
-# 自定义形状
-
-继承ShapeLayout.Shape接口，具体方法可参考源码
